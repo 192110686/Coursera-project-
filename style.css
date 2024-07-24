@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(195, 241, 243);
+}
+
+h1 {
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 50px;
+        font-weight: 300px;
+        text-align: center;
+        color: blueviolet;    
+}
+h2{
+    height:30px;
+    width:auto;
+    border:3px solid black;
+    text-align: center;
+    color: azure;
+    background-color: burlywood;
+    float:inline-end;
+    margin:0;
+    padding:0;
+    
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.one, .two, .three {
+    margin: 5px;
+    margin-top: 30px;
+    padding: 10px;
+    padding-top: 0;
+    padding-right: 0;
+    border: 1px solid black;
+    width: 30%; /* Default width for large screens */
+    box-sizing: border-box;
+    background-color: chocolate;
+   /* Ensures padding and border are included in the element's total width */
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .one, .two, .three {
+        width: 45%; 
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+    .one, .two, .three {
+        width: 100%; 
+    }
+}
